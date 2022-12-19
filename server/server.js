@@ -15,7 +15,7 @@ app.use('/todo', todoRoute)
 
 
 
-mongoose.connect('mongodb+srv://Shubhayu:gullu123@cluster0.netr6i2.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://@cluster0.netr6i2.mongodb.net/?retryWrites=true&w=majority',
                   () => {console.log("connected to database...")} ).then(app.listen(port, () => {
                     console.log(`Example app listening on port ${port}`)
                   }))
